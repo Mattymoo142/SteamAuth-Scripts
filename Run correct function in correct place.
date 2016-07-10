@@ -1,0 +1,30 @@
+#How to change which function to run.
+#E.g choose LoginButton() or LogoutButton()
+
+#So you have your if statement:
+
+<?php
+if(!isset($_SESSION['steamid'])) {
+
+    #but you want to run the function elsewhere
+
+}  else {
+
+    include ('steamauth/userInfo.php'); //To access the $steamprofile array
+    //Protected content
+
+    #but you want to run the function elsewhere
+}     
+?>
+<!DOCTYPE html>
+<html>
+<body>
+
+#You want to call your button here? Here's how!
+
+<?php echo (isset($_SESSION['steamid'])) ? logoutbutton() : loginbutton(); ?>
+
+#Now the correct button will be displayed!
+
+</body>
+</html>
