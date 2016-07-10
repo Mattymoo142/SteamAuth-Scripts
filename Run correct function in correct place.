@@ -20,11 +20,11 @@ if(!isset($_SESSION['steamid'])) {
 <html>
 <body>
 
-#You want to call your button here? Here's how!
+<!-- You want to call your button here? Here's how! -->
 
 <?php echo (isset($_SESSION['steamid'])) ? logoutbutton() : loginbutton(); ?>
 
-#Now the correct button will be displayed!
+<!-- Now the correct button will be displayed! -->
 
 </body>
 </html>
