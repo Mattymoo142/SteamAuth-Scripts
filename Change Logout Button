@@ -1,0 +1,31 @@
+#This will show you how to edit the logout button.
+#First, Open SteamAuth\SteamAuth.php
+#On the line:
+echo "<form action='' method='get'><button name='logout' type='submit' ></button></form>"; //logout button
+
+#Add a class in the button tag, like so:
+echo "<form action='' method='get'><button name='logout' type='submit' class='logStyle'></button></form>"; //logout button
+                                                                            ^^^^^^
+                                                                             HERE
+                                                                            
+#Then at the bottom:
+
+?>
+
+#Add this like so:
+
+?><!DOCTYPE html>
+<html>
+<head>
+<style>
+  .logStyle {
+    background-image: url(THE URL TO THE LOGOUT BUTTON)
+    background-repeat: no-repeat;
+		width: THE IMAGE WIDTH px;
+		height: THE IMAGE HEIGHT px;
+  }
+</style>
+</head>
+</html>
+
+#You have now successfully changed the logout button!
